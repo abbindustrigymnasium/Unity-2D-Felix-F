@@ -1,7 +1,7 @@
 <h1 align="center">
 CityRunner
-Felix Folkebrant 200s *PRRPRR01
 </h1>
+####Felix Folkebrant 200s
 ## Inledning
 
 ##### *Why did the programmer quit his job? Because he didn't get arrays (a raise).* 
