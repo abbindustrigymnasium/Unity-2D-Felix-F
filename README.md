@@ -1,6 +1,7 @@
 <h1 align="center">
 CityRunner
 </h1>
+
 #### Felix Folkebrant 200s
 ## Inledning
 
@@ -8,8 +9,6 @@ CityRunner
 Nu när jag gjort en intresseväckande inleding kan jag börja beskriva projektet.
 
 I det här projektet har jag byggt ett 2D spel som liknar många andra "infinite runner" spel. I spelet springer min karaktär från vänster till höger i en omgivnig där målet är att springa så långt som möjligt och plocka upp så mycket pengar som möjligt på vägen. Mina personliga mål inför projektet var att bli bättre på C# och lära mig hur "procedural generation" fungerar då jag tycker att det är en rolig "mechanic" i spel. Jag hade lite förkunskap med unity men med projektet känner jag mig nu helt bekväm med 2D element i unity. 
-
-## Djupare beskrivning
 
 ### Rörelse
 Karaktären i spelet kan "slidea", hoppa och dubbelhoppa. Karaktären springer även konstant åt höger. Det svåraste med rörelsen i spelet var att få dubbelhoppet att fungera. Lösningen jag hamnade på tillslut var att göra en groundcheck som kontrollerar en float som höjs varje gång man gör det första hoppet och sänks efter andra hoppet vilket hindrar ett tredje hopp. KEdjan terställs sedan när man nuddar marken. Ett annat problem var att få animationerna att byta till rätt animation beroende på vad man ger för inputs. Jag löste det men en hel del värden som kontrolleras men det finns fortfarande en bugg kvar i spelet där karaktären fastnar i första hopp animationen som jag inte hann lösa.
