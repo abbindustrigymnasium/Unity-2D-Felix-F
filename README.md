@@ -1,6 +1,8 @@
+<p align="center">
 # CityRunner
 #### **Felix Folkebrant** 200s *PRRPRR01*
 ## Inledning
+</p>
 
 ##### *Why did the programmer quit his job? Because he didn't get arrays (a raise).* 
 Nu när jag gjort en intresseväckande inleding kan jag börja beskriva projektet.
