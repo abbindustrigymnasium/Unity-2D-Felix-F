@@ -8,9 +8,14 @@ I det här projektet har jag byggt ett 2D spel som liknar många andra "infinite
 
 ## Djupare beskrivning
 
-Karaktären i spelet kan "slidea", hoppa och dubbelhoppa. Karaktären springer även konstant åt höger. Det svåraste med rörelsen i spelet var att få dubbelhoppet att fungera. Lösningen jag hamnade på tillslut var att göra en groundcheck som kontrollerar en float som höjs varje gång man gör det första hoppet och sänks efter andra hoppet vilket hindrar ett tredje hopp. KEdjan terställs sedan när man nuddar marken. Ett annat problem var att få animationerna att byta till rätt animation beroende på vad man ger för inputs. Jag löste det men en hel del värden som kontrolleras men det finns fortfarande en bugg kvar i spelet där karaktären fastnar i första hopp animationen som jag inte hann lösa. 
-Bakgrunden i spelet har även en parallax effekt som gör att den känns något 3-dimensionell även om det bara är 3 stillbilder jag skapade som rör sig i olika hastigheter jämfört med kameran. Om parallaxen är toppingen på tårtan så är väl min "procedural generation" hela kakan som projektet är byggt runt. Det tog ett tag att implimentera men nu genererar den en av tre olika "tiles" eller "chunks" så det är bara att skapa fler chunks och lägga till dem i scriptet så kan jag göra spelet hur varierat som helst.
-Det sista jag la till var det riktiga "icing on the cake", post processing. Jag försökte få spelet att se ut som om det var spelat på en äldre TV med en avrundad skärm och "film grain" noise. Jag la även till motionblur som gör att spelet känns mer "smooth". 
+### Rörelse
+Karaktären i spelet kan "slidea", hoppa och dubbelhoppa. Karaktären springer även konstant åt höger. Det svåraste med rörelsen i spelet var att få dubbelhoppet att fungera. Lösningen jag hamnade på tillslut var att göra en groundcheck som kontrollerar en float som höjs varje gång man gör det första hoppet och sänks efter andra hoppet vilket hindrar ett tredje hopp. KEdjan terställs sedan när man nuddar marken. Ett annat problem var att få animationerna att byta till rätt animation beroende på vad man ger för inputs. Jag löste det men en hel del värden som kontrolleras men det finns fortfarande en bugg kvar i spelet där karaktären fastnar i första hopp animationen som jag inte hann lösa.
+### Bakgrund
+Bakgrunden i spelet har även en parallax effekt som gör att den känns något 3-dimensionell även om det bara är 3 stillbilder jag skapade som rör sig i olika hastigheter jämfört med kameran. Om parallaxen är toppingen på tårtan så är väl min "procedural generation" hela kakan som projektet är byggt runt. Det tog ett tag att implimentera men nu genererar den en av tre olika "tiles" eller "chunks" så det är bara att skapa fler chunks och lägga till dem i scriptet så kan jag göra spelet hur varierat som helst. 
+
+
+### Post processing och ljus
+Det sista jag la till var det riktiga "icing on the cake", post processing. Jag försökte få spelet att se ut som om det var spelat på en äldre TV med en avrundad skärm och "film grain" noise. Jag la även till motionblur som gör att spelet känns mer "smooth". Jag använder mig även av Unitys "Universal Rendering Pipeline" för 2D lightning som gör att jag kan få färgerna och ljuskällor att interagera med omgivningen och ge ljus till annars livlösa "sprites" och på så sätt få ljus i 2D. 
 
 ## Avslut
 
